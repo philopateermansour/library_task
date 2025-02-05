@@ -13,7 +13,7 @@
       console.log("Number of books:", numberOfBooks.value);
       
       document.getElementById("number-of-books").style.display = "none";
-      document.querySelector("#book-form form").style.display = "flex";
+      document.querySelector("#book-form").style.display = "flex";
     }
   });
   document.querySelector("#book-form form").addEventListener("submit", (e) => {

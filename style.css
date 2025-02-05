@@ -1,47 +1,110 @@
-body{
-    background-color: #8BD1ED;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
 }
-.buttons{
-    background-color: #2494FF;
-    color: white;
-    padding: 2px 10px;
-    border-radius: 5px;   
-}
-.errors{
-    color: red;
-    display: block;
-    margin: 5px;
-    display: none; 
-}
-#book-form form{
-    display: none;
+
+body {
+    background: linear-gradient(135deg, #4b0082, #8a2be2);
+    display: flex;
     flex-direction: column;
     align-items: center;
-    input{
-        width: 10%;
-        margin-top: 5px;
-    }
-    label{
-        margin-top: 10px;
-    }
-    .book-form-buttons{
-        flex-direction: row;
-    }
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
 
-}
-table{
-    display: none;
-    width: 100%;
-    margin-top: 20px;
-}
-td {
-    border: 1px solid black;
-    padding: 8px;
+#number-of-books {
+    background: #813FB5;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    margin: 0 5px;
-    background-color: white;
-    button{
-       margin: 0 10px;
-    }
-  }
-  
+    width: 350px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: gray;
+    color: white;
+    outline: none;
+    margin-top: 5px;
+}
+
+input:focus {
+    background: gray;
+    border-color: #ffb400;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+.errors {
+    color: #ff4d4d;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+
+.buttons {
+    background: #ffb400;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.buttons:hover {
+    background: #ff8c00;
+}
+
+#book-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.book-form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    margin-top: 20px;
+    width: 90%;
+    background: #FFFDD0;
+    color: black;
+    border-radius: 10px;
+    display: none;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #ffb400;
+    color: white;
+    font-weight: bold;
+}
