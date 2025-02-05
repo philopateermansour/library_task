@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="number-of-books">
+      <label for="number-of-books-input">How Many Books ?</label>
+      <input
+        type="number"
+        id="number-of-books-input"
+        placeholder="Enter Books No."
+      />
+      <button class="buttons">ok</button>
+      <span class="errors" id="number-of-books-input-error">
+        number of books must be greater than 0</span
+      >
+    </div>
+
+    <div id="book-form">
+      <form>
+        <label for="book-name-input">Books's Name</label>
+        <input type="text" id="book-name-input" placeholder="Enter Book Name" />
+        <span class="errors" id="book-name-input-error">
+          book name is required</span
+        >
+
+        <label for="price-input">Price </label>
+        <input type="number" id="price-input" placeholder="Enter Price" />
+        <span class="errors" id="price-input-error"> price is required</span>
+
+        <label for="author-name-input">Author Name</label>
+        <input
+          type="text"
+          id="author-name-input"
+          placeholder="Enter Author Name"
+        />
+        <span class="errors" id="author-name-input-error"> </span>
+
+        <label for="author-email-input">Author Email</label>
+        <input
+          type="email"
+          id="author-email-input"
+          placeholder="Enter Author Email"
+        />
+        <span class="errors" id="author-email-input-error"></span>
+        <div class="book-form-buttons">
+          <button class="buttons" id="add-button">Add</button>
+          <button class="buttons" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <table>
+      <tr>
+        <td>Book Name</td>
+        <td>Price</td>
+        <td>Author Name</td>
+        <td>Author Email</td>
+      </tr>  
+      <tbody id="book-list"></tbody>
+    </table>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
